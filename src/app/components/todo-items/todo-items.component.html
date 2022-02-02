@@ -1,0 +1,9 @@
+<div class="container mt-2">
+  <h4 [ngClass]="{'strike': items.active}">{{items.title}}</h4>
+  <p [ngClass]="{'strike': items.active}">{{items.description}}</p>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1"  (click)="onCheckBox(items)">
+    <label class="form-check-labelb-2" for="exampleCheck1">Mark as Done</label>
+  </div>
+  <button class="btn-danger border-0 mb-1" (click)="onClick(items)">Delete</button>
+</div>
